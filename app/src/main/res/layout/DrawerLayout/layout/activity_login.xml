@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.data.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/image1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bidr"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linear1"
+        android:weightSum="1"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/loginback"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:id="@+id/userEV"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:id="@+id/user_delet"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/delet_login"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linear2"
+        android:weightSum="1"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/loginback"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/visible"
+            android:id="@+id/ps_visible"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:id="@+id/psEV"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/ps_delet"
+            android:visibility="invisible"
+            android:background="@drawable/delet_login"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repsCheck"
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:text="记住密码"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/submit"
+        android:layout_below="@+id/repsCheck"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="登  录"
+        android:background="@drawable/submitbg"
+        android:textColor="#AEAFB1"
+        android:textSize="22sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgetPs"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:text="忘记密码"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#E5E5E7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerPs"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:text="用户注册"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

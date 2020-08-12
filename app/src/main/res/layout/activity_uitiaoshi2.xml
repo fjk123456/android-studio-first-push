@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UitiaoshiActivity">
+
+    <EditText
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:hint="还未选择" />
+
+    <EditText
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_below="@+id/tv1"
+        android:gravity="center"
+        android:hint="还未选择" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_above="@+id/tv3"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:layout_below="@+id/tv2"
+        android:text="调试spinner"
+        android:textColor="#FF5252"
+        android:textSize="25sp" />
+
+
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        app:smsp_enableFloatingLabel="false"
+        app:smsp_hint="***"
+        android:layout_below="@+id/tv3"
+        app:smsp_hintColor="#E1EEE2"
+        app:smsp_itemColor="#512DA8"
+        app:smsp_itemListColor="#7C4DFF"
+        app:smsp_itemListHintBackgroundColor="#808080"
+        app:smsp_itemListHintColor="#FFFFFF"
+        app:smsp_multilineError="false"
+        app:smsp_selectedItemListColor="#FF5252" />
+    
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uiSp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/spbk"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"
+        android:popupBackground="#D6D8D6"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+</RelativeLayout>

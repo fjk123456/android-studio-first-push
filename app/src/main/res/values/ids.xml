@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ev1"/>
+    <item type="id" name="ev2"/>
+    <item type="id" name="dt1"/>
+
+    <item type="id" name="ev3"/>
+    <item type="id" name="sp1"/>
+    <item type="id" name="dt2"/>
+</resources>

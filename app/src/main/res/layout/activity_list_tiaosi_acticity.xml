@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".List_tiaosiActicity">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/list1"/>
+
+    <Button
+        android:id="@+id/btnViewEntire"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/btn_entire" />
+
+    <Button
+        android:layout_height="68dp"
+        android:layout_width="68dp"
+        android:id="@+id/btnZoomOut"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_zoom_out"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:layout_above="@+id/btnViewEntire"/>
+
+    <Button
+        android:layout_height="68dp"
+        android:layout_width="68dp"
+        android:id="@+id/btnZoomIn"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_zoom_in"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:layout_above="@+id/btnZoomOut"/>
+</LinearLayout>

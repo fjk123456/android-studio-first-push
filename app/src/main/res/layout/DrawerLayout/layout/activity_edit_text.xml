@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditTextActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="1200dp"
+               android:text="实例情况"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:background="@drawable/editext_selector"
+               android:id="@+id/edit1"/>
+
+           <com.example.util.MyEditText
+               android:layout_marginRight="5dp"
+               android:layout_marginLeft="5dp"
+               android:layout_width="match_parent"
+               android:paddingTop="2dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/edit2"
+               android:textSize="15sp"
+               android:scrollbars="vertical"
+               android:scrollbarStyle="insideOverlay"
+               android:gravity="left|top"
+               android:inputType="textMultiLine"
+               android:minLines="2"
+               android:maxLines="2"
+               android:background="@drawable/editext_selector" />
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

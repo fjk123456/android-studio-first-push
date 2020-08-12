@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/fragmen1"
+    android:orderInCategory="100"
+    android:title="界面编录1"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen2"
+    android:orderInCategory="100"
+    android:title="界面编录2"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen3"
+    android:orderInCategory="100"
+    android:title="界面编录3"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen4"
+    android:orderInCategory="100"
+    android:title="界面编录4"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen5"
+    android:orderInCategory="100"
+    android:title="界面编录5"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen6"
+    android:orderInCategory="100"
+    android:title="界面编录6"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen7"
+    android:orderInCategory="100"
+    android:title="界面编录7"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen8"
+    android:orderInCategory="100"
+    android:title="界面编录8"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen9"
+    android:orderInCategory="100"
+    android:title="界面编录9"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen10"
+    android:orderInCategory="100"
+    android:title="界面编录10"
+    android:icon="@drawable/w"/>
+<item
+    android:id="@+id/fragmen11"
+    android:orderInCategory="100"
+    android:title="界面编录11"
+    android:icon="@drawable/w"/>
+<item
+    android:orderInCategory="100"
+    android:title="界面编录12"
+    android:icon="@drawable/w">
+    <menu>
+        <item
+            android:id="@+id/fragmen13"
+            android:orderInCategory="100"
+            android:title="咸水"
+            android:icon="@drawable/w"/>
+        <item
+            android:id="@+id/fragmen14"
+            android:orderInCategory="100"
+            android:title="淡水"
+            android:icon="@drawable/w"/>
+        <item
+            android:id="@+id/fragmen15"
+            android:orderInCategory="100"
+            android:title="岩溶水"
+            android:icon="@drawable/w"/>
+    </menu>
+</item>
+</menu>
